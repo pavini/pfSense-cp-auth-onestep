@@ -43,13 +43,70 @@ $confirmationCode = "";				// Optional connection code asked for login with mini
 
 //// Language function
 
-$validLanguages = Array('en', 'fr', 'es', 'it');	// When adding languages, add a new entry here
-$language = "en";				// May be superseeded by passing language parameter in URL
+$validLanguages = Array('en', 'fr', 'es', 'it', 'pt_BR');	// When adding languages, add a new entry here
+$language = "pt_BR";				// May be superseeded by passing language parameter in URL
 
 //TODO: function t approach of assigning all strings is not very effective (all strings assigned on every run!)
 function t($string) {
 
 global $language, $brand, $hotelName, $hotelSite;
+
+
+if ($language == "pt_BR")
+{
+//// English strings
+
+// Page title
+$pageTitle_string = "Acesso Wifi";
+
+// UI language strings
+$termsOfUse_string = "Termos de uso";
+$termsOfUseRead_string = "Já li";
+$termsOfUseAccept_string ="Eu aceito o";
+$wifiProvidedBy_string = "Este serviço é fornecido por $brand";
+$generalUseMessage_string = "Para manter o serviço gratis, por favor <strong>respeite</strong> os termos de uso e os <strong>outros usuários</strong> não fazendo downloads de grandes arquivos.";
+$error_string = "Erro";
+$datePrefix_string = "O";
+$welcome_string = "Bem-vindo(a)";
+$welcomeMessage_string = "$hotelName está feliz em fornecer acesso a internet.<br/> Você esta apenas a alguns passos de acesso completo a internet.";
+
+// UI field strings
+$roomNumber_string = "Numero do Quarto";
+$confirmationCode_string = "Codigo de confirmação";
+$emailAddress_string = "Email";
+$familyName_string = "Sobrenome";
+$surName_string = "Nome";
+
+// Validation strings
+$roomNumberValidation_string = "Please enter your room number";
+$confirmationCodeValidation_string = "Please enter your confirmation code";
+$emailAddressValidation_string = "Please enter a valid email address";
+$familyNameValidation_string = "Enter your familyname please";
+$surNameValidation_string = "Enter your surname please";
+$termsOfUseValidation_string = "Please accept the terms of use";
+$minTwoCharacters_string = "Minmum two characters";
+$minThreeCharacters_string = "Minimum three characters";
+
+// Checkbox strings
+$newsletter_string = "Subscribe to our newsletter";
+
+// Connect button string
+$connect_string = "Connect";
+$continue_string = "Continue";
+
+// Month names
+$monthList = Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+
+// Error messages
+$macAdressErrorMessage_string = "Your device doesn't provide all necessary data for connection.";
+$databaseConnectErrorMessage_string = "Cannot connect to the database. ";
+$databaseRegisterErrorMessage_string = "Cannot register your user account.";
+$databaseCheckErrorMessage_string = "Cannot check database for user.";
+$incorrectInput_string = "The input you provided is incorrect.";
+$incorrectConfirmationCode_string = "The code is incorrect.";
+$noScript_string = "Please click on Continue if your browser doesn't support JavaScript.";
+}
+  
 
 if ($language == "en")
 {
