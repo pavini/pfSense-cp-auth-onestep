@@ -16,6 +16,4 @@ The user account gets created / updated on first login.
 - Debug mode
 
 ## How-to
-
-Full documentation is available here (see the HTML link for English doc)
-http://netpower.fr/pfcp-pfSense-auth-onestep
+https://www.youtube.com/watch?v=N7LmJrzi9Wg
